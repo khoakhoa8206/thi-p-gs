@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merry Christmas</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Effects -->
+  <canvas id="snowCanvas"></canvas>
+
+  <!-- Music -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicToggle">🔇</button>
+
+  <!-- NAME INPUT SCREEN -->
+  <div class="name-screen" id="nameScreen">
+    <div class="name-box">
+      <h2>🎄 Nhập tên 🎄</h2>
+      <input type="text" id="nameInput" placeholder="Tên ..." />
+      <button id="openCardBtn">Mở thiệp</button>
+    </div>
+  </div>
+
+  <!-- Card Wrapper -->
+  <div class="scene">
+    <div class="card-wrapper">
+      <div class="card" id="card">
+
+        <!-- FRONT -->
+        <div class="card-face card-front">
+          <div class="moon">
+            <div class="santa"></div>
+          </div>
+
+          <div class="forest"></div>
+          <h1 class="title">Merry Christmas</h1>
+        </div>
+
+        <!-- INSIDE -->
+        <div class="card-face card-inside">
+          <div class="inside-left">
+            <img src="photo.jpg" alt="Your Photo">
+          </div>
+
+          <div class="inside-right">
+            <p class="message">
+		Ho Ho Ho 🎅<br>
+		Merry Christmas<br>
+		🍬🍪🍫<br>
+              Chúc <strong><span id="userName">em</span></strong> có một Noel thật ấm áp, vui vẻ.<br>
+              Cười thật nhiều, ăn no, ngủ kĩ.<br>
+              Và nhận được thật nhiều quà nhé !!<br>
+              <strong>Đăng Khoa</strong><br>
+              💖
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
